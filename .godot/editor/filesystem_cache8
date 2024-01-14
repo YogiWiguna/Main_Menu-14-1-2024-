@@ -1,0 +1,18 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1705216639
+default_bus_layout.tres::AudioBusLayout::3161936264741574541::1705215600::0::1::::<><>::
+icon.svg::CompressedTexture2D::37906783194079153::1705153795::1705153801::1::::<><>::
+::res://Audio/::1705216639
+::res://GlobalScipt/::1705216631
+persistence.gd::GDScript::-1::1705215871::0::1::::<>Node<>::
+::res://scenes/::1705160921
+::res://scenes/Action Button/::1705216607
+action_button.gd::GDScript::-1::1705214004::0::1::::<>Button<>::
+action_button.tscn::PackedScene::1874125161741943755::1705216607::0::1::::<><>::res://scenes/Action Button/action_button.gd
+::res://scenes/Main Menu/::1705216563
+audio.gd::GDScript::-1::1705215491::0::1::::<>TabBar<>::
+back_button.gd::GDScript::-1::1705216488::0::1::::<>Button<>::
+main_menu.tscn::PackedScene::7308008127877165963::1705216563::0::1::::<><>::res://scenes/Main Menu/options.gd<>res://scenes/Main Menu/video.gd<>res://scenes/Main Menu/quit.gd<>res://scenes/Main Menu/audio.gd<>res://scenes/Main Menu/back_button.gd<>uid://1x3tke8l7xxr::::res://scenes/Action Button/action_button.tscn
+options.gd::GDScript::-1::1705216406::0::1::::<>Button<>::
+quit.gd::GDScript::-1::1705216563::0::1::::<>Button<>::
+video.gd::GDScript::-1::1705215028::0::1::::<>TabBar<>::

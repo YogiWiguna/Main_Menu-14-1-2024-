@@ -1,0 +1,10 @@
+res://scenes/Main Menu/main_menu.tscn
+res://scenes/Action Button/action_button.tscn
+res://persistence.gd
+res://action_button.gd
+res://scenes/Main Menu/video.gd
+res://scenes/Main Menu/audio.gd
+res://default_bus_layout.tres
+res://scenes/Main Menu/options.gd
+res://scenes/Main Menu/back_button.gd
+res://scenes/Main Menu/quit.gd
