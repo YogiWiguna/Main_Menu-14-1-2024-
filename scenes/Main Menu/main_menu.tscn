@@ -260,7 +260,6 @@ size_flags_horizontal = 3
 layout_mode = 2
 
 [node name="ResetButton" type="Button" parent="UI/Settings/Controls/Control/PanelContainer/MarginContainer/VBoxContainer"]
-visible = false
 layout_mode = 2
 text = "Reset Button"
 

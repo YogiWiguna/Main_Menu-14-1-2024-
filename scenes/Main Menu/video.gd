@@ -23,6 +23,7 @@ func _on_fullscreen_toggled(button_pressed):
 		# Set the value of current value (Fullscreen) in "Video" node and from "Fullscreen"
 		# And later will be save on the config file save on Persistence script
 		Persistence.config.set_value("Video", "Fullscreen", DisplayServer.WINDOW_MODE_FULLSCREEN)
+		
 	else:
 		# Check if the button is not being pressed or uncheck
 		# in save data file (setting.cfg) the value off Fullscreen will be 0 

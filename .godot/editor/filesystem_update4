@@ -1,5 +1,5 @@
 res://scenes/Main Menu/main_menu.tscn
+res://scenes/Main Menu/controls.gd
 res://scenes/Action Button/action_button.tscn
 res://scenes/Action Button/input_button.tscn
-res://GlobalScript/persistence.gd
-res://scenes/Main Menu/controls.gd
+res://scenes/Main Menu/video.gd
