@@ -9,6 +9,7 @@ var is_remapping = false
 var action_to_remap = null
 var remapping_button = null
 
+
 var input_actions = {
 	"move_up": "Move Up",
 	"move_down": "Move Down",
@@ -20,6 +21,7 @@ var input_actions = {
 
 func _ready():
 	creation_action_list()
+	
 
 func creation_action_list():
 	InputMap.load_from_project_settings()
@@ -29,15 +31,17 @@ func creation_action_list():
 	for action in input_actions:
 		var button = input_button_scene.instantiate()
 		var action_label = button.find_child("LabelAction")
-		var input_label = button.find_child("LabelInput")
+		var label_input = button.find_child("LabelInput")
 		
 		action_label.text = input_actions[action]
 		
 		var events = InputMap.action_get_events(action)
+		print("Events :")
+		print(events[0])
 		if events.size() > 0:
-			input_label.text = events[0].as_text().trim_suffix(" (Physical)")
+			label_input.text = events[0].as_text().trim_suffix(" (Physical)")
 		else: 
-			input_label.text = ""
+			label_input.text = ""
 		
 		action_list.add_child(button)
 		button.pressed.connect(_on_input_button_pressed.bind(button, action))
@@ -64,11 +68,16 @@ func _input(event):
 			InputMap.action_add_event(action_to_remap, event)
 			_update_action_lists(remapping_button, event)
 			
+			
+			Persistence.config.set_value("Controls", action_to_remap, event)
+			Persistence.save_data()
+			
 			is_remapping = false
 			action_to_remap = null
 			remapping_button = null
 			
 			accept_event()
+			
 
 func _update_action_lists(button, event):
 	button.find_child("LabelInput").text = event.as_text().trim_suffix(" (Physical)")
