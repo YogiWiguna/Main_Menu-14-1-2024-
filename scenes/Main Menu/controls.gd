@@ -35,20 +35,17 @@ func _ready():
 	creation_action_list()
 	
 
-
 func creation_action_list():
-	InputMap.load_from_project_settings()
 	for item in action_list.get_children():
 		item.queue_free()
 		
-	
-	
+
 	for action in input_actions:
 		var button = input_button_scene.instantiate()
 		var action_label = button.find_child("LabelAction")
 		var label_input = button.find_child("LabelInput")
 		var screen_type = Persistence.config.get_value("Controls", action)
-		
+		print(screen_type)
 		action_label.text = input_actions[action]
 		
 		var events = InputMap.action_get_events(action)

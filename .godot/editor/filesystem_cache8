@@ -1,21 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705669808
+::res://::1705841838
 icon.svg::CompressedTexture2D::37906783194079153::1705669770::1705669809::1::::<><>::
 README.md::TextFile::-1::1705669770::0::1::::<><>::
 ::res://Audio/::1705669770
 default_bus_layout.tres::AudioBusLayout::3161936264741574541::1705669770::0::1::::<><>::
-::res://GlobalScript/::1705669770
-persistence.gd::GDScript::-1::1705669770::0::1::::<>Node<>::
+::res://GlobalScript/::1705836895
+persistence.gd::GDScript::-1::1705836895::0::1::::<>Node<>::
 ::res://scenes/::1705669770
-::res://scenes/Action Button/::1705669770
+::res://scenes/Action Button/::1705841779
 action_button.gd::GDScript::-1::1705669770::0::1::::<>Button<>::
-action_button.tscn::PackedScene::1874125161741943755::1705669770::0::1::::<><>::res://scenes/Action Button/action_button.gd
-input_button.tscn::PackedScene::1212764587294980663::1705669770::0::1::::<><>::
-::res://scenes/Main Menu/::1705669770
+action_button.tscn::PackedScene::1874125161741943755::1705841779::0::1::::<><>::res://scenes/Action Button/action_button.gd
+input_button.tscn::PackedScene::1212764587294980663::1705841779::0::1::::<><>::
+::res://scenes/Main Menu/::1705841779
 audio.gd::GDScript::-1::1705669770::0::1::::<>TabBar<>::
-back_button.gd::GDScript::-1::1705669770::0::1::::<>Button<>::
-controls.gd::GDScript::-1::1705669770::0::1::::<>TabBar<>::
-main_menu.tscn::PackedScene::7308008127877165963::1705669770::0::1::::<><>::uid://smk38dactbt::::res://icon.svg<>res://scenes/Main Menu/options.gd<>res://scenes/Main Menu/video.gd<>res://scenes/Main Menu/quit.gd<>res://scenes/Main Menu/audio.gd<>res://scenes/Main Menu/back_button.gd<>res://scenes/Main Menu/controls.gd<>uid://rjqb5h7lykod::::res://scenes/Action Button/input_button.tscn
+back_button.gd::GDScript::-1::1705820514::0::1::::<>Button<>::
+controls.gd::GDScript::-1::1705841752::0::1::::<>TabBar<>::
+main_menu.tscn::PackedScene::7308008127877165963::1705841779::0::1::::<><>::uid://smk38dactbt::::res://icon.svg<>res://scenes/Main Menu/options.gd<>res://scenes/Main Menu/video.gd<>res://scenes/Main Menu/quit.gd<>res://scenes/Main Menu/audio.gd<>res://scenes/Main Menu/back_button.gd<>res://scenes/Main Menu/controls.gd<>uid://rjqb5h7lykod::::res://scenes/Action Button/input_button.tscn
 options.gd::GDScript::-1::1705669770::0::1::::<>Button<>::
 quit.gd::GDScript::-1::1705669770::0::1::::<>Button<>::
-video.gd::GDScript::-1::1705669770::0::1::::<>TabBar<>::
+video.gd::GDScript::-1::1705671081::0::1::::<>TabBar<>::

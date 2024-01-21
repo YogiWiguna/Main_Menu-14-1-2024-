@@ -4,7 +4,6 @@ const PATH = "user://settings.cfg"
 var config = ConfigFile.new()
 var label_input
 
-@onready var input_button_scene = preload("res://scenes/Action Button/input_button.tscn")
 
 func _ready():
 	for action in InputMap.get_actions():
@@ -43,12 +42,9 @@ func load_control_settings():
 	for action in InputMap.get_actions():
 		if keys.has(action):
 			var value = config.get_value("Controls", action)
-			
-			#print("Value")
-			#print(value)
 			InputMap.action_erase_events(action)
 			InputMap.action_add_event(action, value)
-	#label_input.text = value[0].as_text()
+	
 
 func load_video_settings():
 	var screen_type = config.get_value("Video", "Fullscreen")
