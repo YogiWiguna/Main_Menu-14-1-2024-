@@ -1,9 +1,9 @@
 extends Button
 
-@onready var main_menu = %MainMenu
-@onready var settings = %Settings
+@onready var settings = $"../.."
+@onready var main_menu = get_node("/root/MainMenu/UI/MainMenu")
 
 
 func _on_pressed():
-	main_menu.show()
 	settings.hide()
+	main_menu.show()

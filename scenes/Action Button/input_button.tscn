@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://rjqb5h7lykod"]
+[gd_scene load_steps=5 format=3 uid="uid://rjqb5h7lykod"]
+
+[ext_resource type="Theme" uid="uid://cwnrmxn0gcsms" path="res://scenes/default_theme.tres" id="1_mcr11"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ujwp0"]
 bg_color = Color(0, 0, 0, 0.392157)
@@ -15,6 +17,7 @@ anchor_right = 1.0
 offset_bottom = 8.0
 grow_horizontal = 2
 focus_mode = 0
+theme = ExtResource("1_mcr11")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ujwp0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_2s1pq")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2s1pq")

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cwnrmxn0gcsms"]
+
+[ext_resource type="FontFile" uid="uid://dy2lbf1hvlrr8" path="res://fonts/CONSOLA.TTF" id="1_tlulv"]
+
+[resource]
+default_font = ExtResource("1_tlulv")
