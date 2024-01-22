@@ -22,6 +22,7 @@ buses/default_bus_layout="res://Audio/default_bus_layout.tres"
 [autoload]
 
 Persistence="*res://GlobalScript/persistence.gd"
+Global="*res://GlobalScript/Global.gd"
 
 [input]
 

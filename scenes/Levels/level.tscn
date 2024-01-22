@@ -8,26 +8,13 @@
 
 [node name="Player" parent="." instance=ExtResource("1_25mqu")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Pause" type="CanvasLayer" parent="."]
 
-[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("4_tkd0o")]
+[node name="PauseMenu" parent="Pause" instance=ExtResource("4_tkd0o")]
 visible = false
 
-[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+[node name="Setting" type="CanvasLayer" parent="."]
 layer = 2
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
+[node name="Settings" parent="Setting" instance=ExtResource("3_ci515")]
 visible = false
-self_modulate = Color(0.141176, 0.141176, 0.141176, 0.686275)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Settings" parent="CanvasLayer2" instance=ExtResource("3_ci515")]
-visible = false
-offset_left = 328.0
-offset_top = 145.0
-offset_right = -321.0
-offset_bottom = -178.0

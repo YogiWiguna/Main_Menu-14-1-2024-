@@ -56,7 +56,10 @@ func creation_action_list():
 		if events.size() > 0:
 			if events[0] is InputEventKey:
 				#print("Input Event Key")
-				label_input.text = char(screen_type.physical_keycode)
+				
+				label_input.text = OS.get_keycode_string(screen_type.physical_keycode)
+				print("Keycode :", label_input.text)
+				
 			elif events[0] is InputEventMouseButton :
 				
 				label_input.text = mouse_description[screen_type.button_index]

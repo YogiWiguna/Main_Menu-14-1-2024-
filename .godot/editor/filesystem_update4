@@ -1,13 +1,10 @@
+res://scenes/Levels/level.tscn
 res://scenes/Main Menu/main_menu.tscn
 res://scenes/Action Button/action_button.tscn
 res://scenes/Action Button/input_button.tscn
-res://scenes/Main Menu/start.gd
-res://scenes/Levels/level.tscn
-res://scenes/Player/player.tscn
-res://scenes/Player/player.gd
-res://scenes/Main Menu/back_button.gd
 res://scenes/Settings/settings.tscn
-res://scenes/Levels/level.gd
-res://scenes/Main Menu/controls.gd
-res://scenes/Pause Menu/pause_menu.gd
 res://scenes/Pause Menu/pause_menu.tscn
+res://scenes/Settings/setting_menu.tscn
+res://scenes/Pause Menu/pause_menu.gd
+res://GlobalScript/Global.gd
+res://scenes/Main Menu/options.gd

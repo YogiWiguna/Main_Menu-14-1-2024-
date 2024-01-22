@@ -1,4 +1,8 @@
 ColorRect
+PanelContainer
+TabContainer
+MarginContainer
+Control
 CanvasLayer
 Button
 Label
@@ -6,9 +10,5 @@ GridContainer
 CharacterBody2D
 CollisionShape2D
 Sprite2D
-Control
 HBoxContainer
-MarginContainer
 VBoxContainer
-ScrollContainer
-PanelContainer

@@ -1,8 +1,5 @@
-res://scenes/Pause Menu
-res://scenes
 res://scenes/Settings
-res://scenes/Player
-res://scenes/Levels
+res://GlobalScript
 res://scenes/Action Button
 res://
 res://scenes/Main Menu
