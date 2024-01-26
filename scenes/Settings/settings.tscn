@@ -40,6 +40,8 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Video/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 13
+alignment = 1
 
 [node name="Fullscreen" type="Label" parent="Video/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -101,19 +103,22 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -27.5
+offset_left = -78.5
 offset_top = -43.0
-offset_right = 27.5
+offset_right = 78.5
 offset_bottom = 43.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Audio/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 13
+alignment = 1
 
 [node name="Master" type="Label" parent="Audio/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "Master"
+vertical_alignment = 1
 
 [node name="Musci" type="Label" parent="Audio/HBoxContainer/VBoxContainer"]
 layout_mode = 2
