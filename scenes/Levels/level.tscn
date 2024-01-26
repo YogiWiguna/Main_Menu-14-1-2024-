@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bpkndc3tjtaa5"]
 
 [ext_resource type="PackedScene" uid="uid://dacicae3715us" path="res://scenes/Player/player.tscn" id="1_25mqu"]
-[ext_resource type="PackedScene" uid="uid://ch3s87qxbxmu7" path="res://scenes/Settings/settings.tscn" id="3_ci515"]
+[ext_resource type="PackedScene" uid="uid://c4g0h1g5lgir4" path="res://scenes/Settings/settings_ui.tscn" id="3_g5a8l"]
 [ext_resource type="PackedScene" uid="uid://c3xk1whxa6ux6" path="res://scenes/Pause Menu/pause_menu.tscn" id="4_tkd0o"]
 
 [node name="Level" type="Node2D"]
@@ -16,5 +16,5 @@ visible = false
 [node name="Setting" type="CanvasLayer" parent="."]
 layer = 2
 
-[node name="Settings" parent="Setting" instance=ExtResource("3_ci515")]
+[node name="Settings_UI" parent="Setting" instance=ExtResource("3_g5a8l")]
 visible = false

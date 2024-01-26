@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://scenes/Main Menu/quit.gd" id="2_honwf"]
 [ext_resource type="Theme" uid="uid://cwnrmxn0gcsms" path="res://scenes/default_theme.tres" id="2_hxu5t"]
 [ext_resource type="Script" path="res://scenes/Main Menu/start.gd" id="2_m43ss"]
-[ext_resource type="PackedScene" uid="uid://ch3s87qxbxmu7" path="res://scenes/Settings/settings.tscn" id="5_x8n4f"]
+[ext_resource type="PackedScene" uid="uid://c4g0h1g5lgir4" path="res://scenes/Settings/settings_ui.tscn" id="7_nm5pw"]
 
 [node name="MainMenu" type="Node2D"]
 process_mode = 3
@@ -59,8 +59,7 @@ layout_mode = 2
 text = "Quit"
 script = ExtResource("2_honwf")
 
-[node name="Settings" parent="UI" instance=ExtResource("5_x8n4f")]
-unique_name_in_owner = true
+[node name="Settings_UI" parent="UI" instance=ExtResource("7_nm5pw")]
 visible = false
 
 [connection signal="pressed" from="UI/MainMenu/Start" to="UI/MainMenu/Start" method="_on_pressed"]

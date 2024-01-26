@@ -1,7 +1,6 @@
 extends Control
 
-@onready var settings = $"../../Setting/Settings"
-
+@onready var settings_ui = $"../../Setting/Settings_UI"
 
 var is_paused: bool = false:
 	set = set_paused
@@ -21,7 +20,8 @@ func _on_resume_button_pressed():
 	is_paused = false
 
 func _on_setting_button_pressed():
-	settings.show()
+	Global.settings_ui = settings_ui
+	Global.settings_ui.show()
 	self.hide()
 	Global.settings = self
 	
