@@ -1,14 +1,14 @@
+Sprite2D
+Button
 ColorRect
+Label
 PanelContainer
 TabContainer
 MarginContainer
 Control
 CanvasLayer
-Button
-Label
 GridContainer
 CharacterBody2D
 CollisionShape2D
-Sprite2D
 HBoxContainer
 VBoxContainer
