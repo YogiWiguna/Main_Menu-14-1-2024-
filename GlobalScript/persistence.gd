@@ -19,6 +19,7 @@ func _ready():
 	config.set_value("Video", "Borderless", false)
 	
 	config.set_value("Video", "Vsync", DisplayServer.VSYNC_ENABLED)
+
 	
 	for i in range(3):
 		config.set_value("Audio", str(i), 0.0)

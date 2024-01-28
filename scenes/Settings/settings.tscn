@@ -31,12 +31,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -136.5
+offset_top = -63.0
+offset_right = 148.5
+offset_bottom = 63.0
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Video/HBoxContainer"]
 layout_mode = 2
@@ -55,7 +56,20 @@ text = "Boardless"
 layout_mode = 2
 text = "V-sync"
 
+[node name="Resolution" type="Label" parent="Video/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resolution"
+
+[node name="MarginContainer" type="MarginContainer" parent="Video/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
 [node name="VBoxContainer2" type="VBoxContainer" parent="Video/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="Video/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 
 [node name="Fullscreen" type="CheckBox" parent="Video/HBoxContainer/VBoxContainer2"]
@@ -79,6 +93,17 @@ popup/item_2/text = "Adaptive"
 popup/item_2/id = 2
 popup/item_3/text = "Mailbox"
 popup/item_3/id = 3
+
+[node name="Resolution" type="OptionButton" parent="Video/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "1152 x 648"
+popup/item_0/id = 0
+popup/item_1/text = "1280 x 720"
+popup/item_1/id = 1
+popup/item_2/text = "1920 x 1080"
+popup/item_2/id = 2
 
 [node name="BackButton" type="Button" parent="Video"]
 layout_mode = 1
@@ -127,6 +152,10 @@ text = "Music"
 [node name="SFX" type="Label" parent="Audio/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "SFX"
+
+[node name="MarginContainer" type="MarginContainer" parent="Audio/HBoxContainer"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Audio/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
@@ -238,6 +267,7 @@ script = ExtResource("2_rpml0")
 [connection signal="toggled" from="Video/HBoxContainer/VBoxContainer2/Fullscreen" to="Video" method="_on_fullscreen_toggled"]
 [connection signal="toggled" from="Video/HBoxContainer/VBoxContainer2/Borderless" to="Video" method="_on_borderless_toggled"]
 [connection signal="item_selected" from="Video/HBoxContainer/VBoxContainer2/Vsync" to="Video" method="_on_vsync_item_selected"]
+[connection signal="item_selected" from="Video/HBoxContainer/VBoxContainer2/Resolution" to="Video" method="_on_resolution_item_selected"]
 [connection signal="pressed" from="Video/BackButton" to="Video/BackButton" method="_on_pressed"]
 [connection signal="value_changed" from="Audio/HBoxContainer/VBoxContainer2/Master" to="Audio" method="_on_master_value_changed"]
 [connection signal="value_changed" from="Audio/HBoxContainer/VBoxContainer2/Music" to="Audio" method="_on_music_value_changed"]
