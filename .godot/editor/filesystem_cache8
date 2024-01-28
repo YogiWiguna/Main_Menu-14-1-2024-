@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706444419
+::res://::1706455671
 icon.svg::CompressedTexture2D::37906783194079153::1705669770::1705931803::1::::<><>::
 README.md::TextFile::-1::1705669770::0::1::::<><>::
 ::res://Assets/::1706434998
@@ -16,9 +16,9 @@ CONSOLA.TTF::FontFile::8900202473594259503::1705927529::1705927529::1::::<><>::
 CONSOLAB.TTF::FontFile::4555593849420053177::1705927529::1705927529::1::::<><>::
 CONSOLAI.TTF::FontFile::2732172579476942055::1705927529::1705927529::1::::<><>::
 CONSOLAZ.TTF::FontFile::5518138264391792828::1705927529::1705927529::1::::<><>::
-::res://GlobalScript/::1706284281
+::res://GlobalScript/::1706448205
 Global.gd::GDScript::-1::1706284281::0::1::::<>Node<>::
-persistence.gd::GDScript::-1::1705842332::0::1::::<>Node<>::
+persistence.gd::GDScript::-1::1706448205::0::1::::<>Node<>::
 ::res://scenes/::1706363542
 default_theme.tres::Theme::6344887685893094466::1705927529::0::1::::<><>::uid://dy2lbf1hvlrr8::::res://fonts/CONSOLA.TTF
 ::res://scenes/Action Button/::1706434998
@@ -30,24 +30,24 @@ dice_image.tscn::PackedScene::1213766356335883889::1706434998::0::1::::<><>::res
 ::res://scenes/Dice/DiceNumber/::1706434998
 dice.gd::GDScript::-1::1706363542::0::1::::<>Control<>::
 dice.tscn::PackedScene::1398532864741567772::1706434998::0::1::::<><>::res://scenes/Dice/DiceNumber/dice.gd
-::res://scenes/Levels/::1706432834
+::res://scenes/Levels/::1706453892
 level.gd::GDScript::-1::1705927529::0::1::::<>Node2D<>::
-level.tscn::PackedScene::3460691943269134118::1706432834::0::1::::<><>::uid://dacicae3715us::::res://scenes/Player/player.tscn<>uid://c4g0h1g5lgir4::::res://scenes/Settings/settings_ui.tscn<>uid://c3xk1whxa6ux6::::res://scenes/Pause Menu/pause_menu.tscn
-::res://scenes/Main Menu/::1706434998
+level.tscn::PackedScene::3460691943269134118::1706453892::0::1::::<><>::uid://dacicae3715us::::res://scenes/Player/player.tscn<>uid://c4g0h1g5lgir4::::res://scenes/Settings/settings_ui.tscn<>uid://c3xk1whxa6ux6::::res://scenes/Pause Menu/pause_menu.tscn
+::res://scenes/Main Menu/::1706453892
 audio.gd::GDScript::-1::1705669770::0::1::::<>TabBar<>::
 back_button.gd::GDScript::-1::1706284281::0::1::::<>Button<>::
 controls.gd::GDScript::-1::1706434998::0::1::::<>TabBar<>::
-main_menu.tscn::PackedScene::7308008127877165963::1706432834::0::1::::<><>::uid://smk38dactbt::::res://icon.svg<>res://scenes/Main Menu/options.gd<>res://scenes/Main Menu/quit.gd<>uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Main Menu/start.gd<>uid://c4g0h1g5lgir4::::res://scenes/Settings/settings_ui.tscn
+main_menu.tscn::PackedScene::7308008127877165963::1706453892::0::1::::<><>::uid://smk38dactbt::::res://icon.svg<>res://scenes/Main Menu/options.gd<>res://scenes/Main Menu/quit.gd<>uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Main Menu/start.gd<>uid://c4g0h1g5lgir4::::res://scenes/Settings/settings_ui.tscn
 options.gd::GDScript::-1::1706284281::0::1::::<>Button<>::
 quit.gd::GDScript::-1::1705669770::0::1::::<>Button<>::
 start.gd::GDScript::-1::1705927529::0::1::::<>Button<>::
-video.gd::GDScript::-1::1705671081::0::1::::<>TabBar<>::
-::res://scenes/Pause Menu/::1706432834
+video.gd::GDScript::-1::1706453880::0::1::::<>TabBar<>::
+::res://scenes/Pause Menu/::1706453892
 pause_menu.gd::GDScript::-1::1706284281::0::1::::<>Control<>::
-pause_menu.tscn::PackedScene::6786264445537266837::1706432834::0::1::::<><>::uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Pause Menu/pause_menu.gd
+pause_menu.tscn::PackedScene::6786264445537266837::1706453892::0::1::::<><>::uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Pause Menu/pause_menu.gd
 ::res://scenes/Player/::1705927529
 player.gd::GDScript::-1::1705927529::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::7163880121612593794::1705927529::0::1::::<><>::uid://smk38dactbt::::res://icon.svg<>res://scenes/Player/player.gd
-::res://scenes/Settings/::1706434998
-settings.tscn::PackedScene::5323119393546105376::1706434998::0::1::::<><>::uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Main Menu/video.gd<>res://scenes/Main Menu/back_button.gd<>res://scenes/Main Menu/audio.gd<>res://scenes/Main Menu/controls.gd<>uid://rjqb5h7lykod::::res://scenes/Action Button/input_button.tscn
+::res://scenes/Settings/::1706453892
+settings.tscn::PackedScene::5323119393546105376::1706453892::0::1::::<><>::uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Main Menu/video.gd<>res://scenes/Main Menu/back_button.gd<>res://scenes/Main Menu/audio.gd<>res://scenes/Main Menu/controls.gd<>uid://rjqb5h7lykod::::res://scenes/Action Button/input_button.tscn
 settings_ui.tscn::PackedScene::6822235901043934111::1706431277::0::1::::<><>::uid://ch3s87qxbxmu7::::res://scenes/Settings/settings.tscn

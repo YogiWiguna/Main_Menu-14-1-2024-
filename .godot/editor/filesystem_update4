@@ -1,6 +1,5 @@
-res://scenes/Main Menu/main_menu.tscn
 res://scenes/Settings/settings.tscn
+res://GlobalScript/persistence.gd
 res://scenes/Pause Menu/pause_menu.tscn
 res://scenes/Levels/level.tscn
-res://scenes/Main Menu/video.gd
-res://GlobalScript/persistence.gd
+res://scenes/Main Menu/main_menu.tscn

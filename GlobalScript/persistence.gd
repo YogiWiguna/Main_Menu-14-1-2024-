@@ -5,6 +5,7 @@ var config = ConfigFile.new()
 var label_input
 
 
+
 func _ready():
 	for action in InputMap.get_actions():
 		if InputMap.action_get_events(action).size() != 0:
@@ -19,7 +20,7 @@ func _ready():
 	config.set_value("Video", "Borderless", false)
 	
 	config.set_value("Video", "Vsync", DisplayServer.VSYNC_ENABLED)
-
+	config.set_value("Video", "Resolution", 0)
 	
 	for i in range(3):
 		config.set_value("Audio", str(i), 0.0)
