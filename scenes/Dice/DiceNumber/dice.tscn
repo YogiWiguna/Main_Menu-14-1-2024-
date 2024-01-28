@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/Dice/DiceNumber/dice.gd" id="1_o6p7h"]
 
-[node name="Dice" type="Control"]
+[node name="DiceNumber" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

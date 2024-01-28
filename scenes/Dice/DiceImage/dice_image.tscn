@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://rj7s4cikjovh"]
 
 [ext_resource type="Script" path="res://scenes/Dice/DiceImage/dice_image.gd" id="1_mo3ad"]
-[ext_resource type="Texture2D" uid="uid://7uoang3w84qk" path="res://Assets/seed_0.png" id="2_fdftn"]
+[ext_resource type="Texture2D" uid="uid://7uoang3w84qk" path="res://Assets/DiceImage/seed_0.png" id="2_fdftn"]
 
 [node name="DiceImage" type="Control"]
 layout_mode = 3

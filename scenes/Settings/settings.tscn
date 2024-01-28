@@ -103,9 +103,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -78.5
+offset_left = -157.5
 offset_top = -43.0
-offset_right = 78.5
+offset_right = 157.5
 offset_bottom = 43.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -131,6 +131,7 @@ text = "SFX"
 [node name="VBoxContainer2" type="VBoxContainer" parent="Audio/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Master" type="HSlider" parent="Audio/HBoxContainer/VBoxContainer2"]
 unique_name_in_owner = true
@@ -201,6 +202,12 @@ theme_override_constants/margin_bottom = 8
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Controls/Control/PanelContainer/MarginContainer"]
 layout_mode = 2
+
+[node name="Title" type="Label" parent="Controls/Control/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Input Map"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Controls/Control/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
