@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ch3s87qxbxmu7"]
+[gd_scene load_steps=9 format=3 uid="uid://ch3s87qxbxmu7"]
 
 [ext_resource type="Theme" uid="uid://cwnrmxn0gcsms" path="res://scenes/default_theme.tres" id="1_afeyq"]
 [ext_resource type="Script" path="res://scenes/Main Menu/video.gd" id="1_puxvy"]
+[ext_resource type="Script" path="res://scenes/Settings/settings.gd" id="2_gaq0r"]
 [ext_resource type="Script" path="res://scenes/Main Menu/back_button.gd" id="2_rpml0"]
 [ext_resource type="Script" path="res://scenes/Main Menu/audio.gd" id="3_6g3pk"]
 [ext_resource type="Script" path="res://scenes/Main Menu/controls.gd" id="4_h1og6"]
@@ -20,6 +21,7 @@ offset_bottom = -186.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_afeyq")
+script = ExtResource("2_gaq0r")
 
 [node name="Video" type="TabBar" parent="."]
 layout_mode = 2
@@ -269,6 +271,7 @@ script = ExtResource("2_rpml0")
 stream = ExtResource("7_u6mcy")
 bus = &"SFX"
 
+[connection signal="tab_clicked" from="." to="." method="_on_tab_clicked"]
 [connection signal="toggled" from="Video/HBoxContainer/VBoxContainer2/Fullscreen" to="Video" method="_on_fullscreen_toggled"]
 [connection signal="toggled" from="Video/HBoxContainer/VBoxContainer2/Borderless" to="Video" method="_on_borderless_toggled"]
 [connection signal="item_selected" from="Video/HBoxContainer/VBoxContainer2/Vsync" to="Video" method="_on_vsync_item_selected"]

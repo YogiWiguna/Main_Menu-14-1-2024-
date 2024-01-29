@@ -1,5 +1,6 @@
 extends TabBar
 
+@onready var audio_stream_player_2d = $"../AudioStreamPlayer2D"
 
 func _ready():
 	%Master.value = Persistence.config.get_value("Audio", '0')
@@ -26,3 +27,7 @@ func set_volume(idx,value):
 	AudioServer.set_bus_volume_db(idx,linear_to_db(value))
 	Persistence.config.set_value("Audio", str(idx), value)
 	Persistence.save_data()
+
+
+func _on_tab_clicked(tab):
+	audio_stream_player_2d.play()
