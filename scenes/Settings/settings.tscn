@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ch3s87qxbxmu7"]
+[gd_scene load_steps=8 format=3 uid="uid://ch3s87qxbxmu7"]
 
 [ext_resource type="Theme" uid="uid://cwnrmxn0gcsms" path="res://scenes/default_theme.tres" id="1_afeyq"]
 [ext_resource type="Script" path="res://scenes/Main Menu/video.gd" id="1_puxvy"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://scenes/Main Menu/audio.gd" id="3_6g3pk"]
 [ext_resource type="Script" path="res://scenes/Main Menu/controls.gd" id="4_h1og6"]
 [ext_resource type="PackedScene" uid="uid://rjqb5h7lykod" path="res://scenes/Action Button/input_button.tscn" id="5_l6o2b"]
+[ext_resource type="AudioStream" uid="uid://cf15cg6ycesnl" path="res://Audio/SFX/button.wav" id="7_u6mcy"]
 
 [node name="Settings" type="TabContainer"]
 process_mode = 3
@@ -263,6 +264,10 @@ offset_bottom = 31.0
 grow_horizontal = 0
 text = "Back"
 script = ExtResource("2_rpml0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_u6mcy")
+bus = &"SFX"
 
 [connection signal="toggled" from="Video/HBoxContainer/VBoxContainer2/Fullscreen" to="Video" method="_on_fullscreen_toggled"]
 [connection signal="toggled" from="Video/HBoxContainer/VBoxContainer2/Borderless" to="Video" method="_on_borderless_toggled"]

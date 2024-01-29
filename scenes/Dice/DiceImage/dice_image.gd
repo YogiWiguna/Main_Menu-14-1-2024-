@@ -5,11 +5,11 @@ var rng = RandomNumberGenerator.new()
 
 var dice_image = [
 	load("res://icon.svg"),
-	load("res://Assets/seed_0.png"),
-	load("res://Assets/seed_1.png"),
-	load("res://Assets/seed_2.png"),
-	load("res://Assets/seed_3.png"),
-	load("res://Assets/seed_4.png")
+	load("res://Assets/DiceImage/seed_0.png"),
+	load("res://Assets/DiceImage/seed_1.png"),
+	load("res://Assets/DiceImage/seed_2.png"),
+	load("res://Assets/DiceImage/seed_3.png"),
+	load("res://Assets/DiceImage/seed_4.png")
 ]
 
 func _on_roll_button_pressed():

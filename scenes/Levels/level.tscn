@@ -1,8 +1,46 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpkndc3tjtaa5"]
+[gd_scene load_steps=11 format=3 uid="uid://bpkndc3tjtaa5"]
 
 [ext_resource type="PackedScene" uid="uid://dacicae3715us" path="res://scenes/Player/player.tscn" id="1_25mqu"]
 [ext_resource type="PackedScene" uid="uid://c4g0h1g5lgir4" path="res://scenes/Settings/settings_ui.tscn" id="3_g5a8l"]
+[ext_resource type="Texture2D" uid="uid://bbdsf0bk6cwg" path="res://Assets/Campfire36.png" id="4_a7xyq"]
 [ext_resource type="PackedScene" uid="uid://c3xk1whxa6ux6" path="res://scenes/Pause Menu/pause_menu.tscn" id="4_tkd0o"]
+[ext_resource type="AudioStream" uid="uid://yoq6vrfhbbmc" path="res://Audio/SFX/fire.mp3" id="5_b5323"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rw87c"]
+atlas = ExtResource("4_a7xyq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hx5f"]
+atlas = ExtResource("4_a7xyq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru8y6"]
+atlas = ExtResource("4_a7xyq")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mno27"]
+atlas = ExtResource("4_a7xyq")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7igjt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rw87c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hx5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru8y6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mno27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Level" type="Node2D"]
 
@@ -18,3 +56,17 @@ layer = 2
 
 [node name="Settings_UI" parent="Setting" instance=ExtResource("3_g5a8l")]
 visible = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(938, 86)
+scale = Vector2(3.25, 3.25)
+sprite_frames = SubResource("SpriteFrames_7igjt")
+autoplay = "default"
+frame_progress = 0.729173
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="AnimatedSprite2D"]
+stream = ExtResource("5_b5323")
+volume_db = 10.0
+autoplay = true
+bus = &"SFX"

@@ -1,6 +1,8 @@
 extends TabBar
 
 @onready var resolution_option_button = %Resolution
+@onready var audio_stream_player_2d = $"../AudioStreamPlayer2D"
+
 
 const resolution_dict = {
 	"1152 x 648" : Vector2i(1152,648),
@@ -9,7 +11,7 @@ const resolution_dict = {
 }
 
 func _ready():
-	resolution_option_button.item_selected.connect(_on_resolution_item_selected)
+	#resolution_option_button.item_selected.connect(_on_resolution_item_selected)
 	#add_resolution_items()
 	
 	var screen_type = Persistence.config.get_value("Video", "Fullscreen")
