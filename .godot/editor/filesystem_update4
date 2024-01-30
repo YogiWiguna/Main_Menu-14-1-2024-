@@ -5,6 +5,5 @@ res://scenes/Main Menu/main_menu.tscn
 res://scenes/Dice/DiceImage/dice_image.tscn
 res://scenes/Dice/DiceNumber/dice.tscn
 res://scenes/Player/player.tscn
-res://scenes/Main Menu/video.gd
-res://scenes/Main Menu/audio.gd
-res://scenes/Settings/settings.gd
+res://scenes/Main Menu/controls.gd
+res://scenes/Settings/settings_ui.tscn

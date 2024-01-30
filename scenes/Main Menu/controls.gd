@@ -2,6 +2,7 @@ extends TabBar
 
 @onready var input_button_scene = preload("res://scenes/Action Button/input_button.tscn")
 @onready var action_list = $Control/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ActionList
+@onready var audio_stream_player_2d = $"../AudioStreamPlayer2D"
 
 
 
@@ -141,6 +142,7 @@ func _update_action_lists(button, event):
 
 
 func _on_reset_button_pressed():
+	audio_stream_player_2d.play()
 	# Erase all the current input map and load it from the default
 	InputMap.load_from_project_settings()
 	# Get all the input map action 
