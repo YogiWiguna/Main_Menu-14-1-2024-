@@ -28,6 +28,3 @@ func set_volume(idx,value):
 	Persistence.config.set_value("Audio", str(idx), value)
 	Persistence.save_data()
 
-
-func _on_tab_clicked(tab):
-	audio_stream_player_2d.play()

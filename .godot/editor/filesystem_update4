@@ -5,3 +5,5 @@ res://scenes/Settings/settings.tscn
 res://scenes/Pause Menu/pause_menu.gd
 res://scenes/Main Menu/video.gd
 res://scenes/Pause Menu/pause_menu.tscn
+res://scenes/Settings/settings.gd
+res://scenes/Main Menu/audio.gd
