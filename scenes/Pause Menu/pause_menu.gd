@@ -1,6 +1,9 @@
 extends Control
 
 @onready var settings_ui = $"../../Setting/Settings_UI"
+@onready var audio_button = $AudioStreamPlayer2D
+
+
 
 var is_paused: bool = false:
 	set = set_paused
@@ -27,3 +30,15 @@ func _on_setting_button_pressed():
 	
 func _on_main_menu_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/Main Menu/main_menu.tscn")
+
+
+func _on_resume_button_mouse_entered():
+	audio_button.play()
+
+
+func _on_setting_button_mouse_entered():
+	audio_button.play()
+
+
+func _on_main_menu_button_mouse_entered():
+	audio_button.play()

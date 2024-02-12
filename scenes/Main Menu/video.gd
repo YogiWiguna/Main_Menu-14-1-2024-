@@ -80,17 +80,3 @@ func _on_resolution_item_selected(index):
 	DisplayServer.window_set_size(resolution_dict.values()[index])
 	Persistence.config.set_value("Video", "Resolution", index)
 	Persistence.save_data()
-
-
-func _on_mouse_entered():
-	audio_stream_player_2d.play()
-
-
-func _on_tab_clicked(tab):
-	print("clicked")
-	audio_stream_player_2d.play()
-
-
-func _on_tab_selected(tab):
-	print("selected")
-	audio_stream_player_2d.play()
