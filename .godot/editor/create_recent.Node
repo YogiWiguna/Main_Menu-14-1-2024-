@@ -1,5 +1,11 @@
-RayCast3D
+Camera3D
 Node3D
+CharacterBody3D
+AnimationTree
+AnimationPlayer
+Sprite3D
+RayCast3D
+CollisionShape3D
 MeshInstance3D
 CPUParticles3D
 AudioStreamPlayer2D
@@ -7,8 +13,3 @@ AudioStreamPlayer
 Camera2D
 AnimatedSprite2D
 MarginContainer
-VSeparator
-OptionButton
-Label
-Sprite2D
-Button

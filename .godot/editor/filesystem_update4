@@ -1,14 +1,9 @@
-res://scenes/Settings/settings.tscn
-res://scenes/Pause Menu/pause_menu.tscn
+res://scenes/Arena/test_arena.tscn
+res://player.gd
 res://scenes/Levels/level.tscn
 res://scenes/Main Menu/main_menu.tscn
-res://scenes/Dice/DiceImage/dice_image.tscn
-res://scenes/Dice/DiceNumber/dice.tscn
 res://scenes/Player/player.tscn
-res://scenes/Arena/arena.tscn
-res://scenes/Arena/arena.gd
-res://scenes/test_arena.tscn
-res://src/utils.gd
-res://scenes/Arena/test_arena.tscn
-res://src/tile.gd
 res://scenes/RayCasting/ray_casting.tscn
+res://scenes/Player3D/player.tscn
+res://tactics_camera.gd
+res://scenes/Camera/tactics_camera.tscn
