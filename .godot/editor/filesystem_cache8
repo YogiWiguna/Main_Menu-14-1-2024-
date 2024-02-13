@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< HEAD
 ::res://::1707703829
 icon.svg::CompressedTexture2D::37906783194079153::1706512978::1706512978::1::::<><>::
 README.md::TextFile::-1::1706512978::0::1::::<><>::
@@ -59,3 +60,86 @@ player.tscn::PackedScene::7163880121612593794::1706597380::0::1::::<><>::uid://s
 settings.gd::GDScript::-1::1706597154::0::1::::<>TabContainer<>::
 settings.tscn::PackedScene::5323119393546105376::1707702251::0::1::::<><>::uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Main Menu/video.gd<>res://scenes/Settings/settings.gd<>res://scenes/Main Menu/back_button.gd<>res://scenes/Main Menu/audio.gd<>res://scenes/Main Menu/controls.gd<>uid://rjqb5h7lykod::::res://scenes/Action Button/input_button.tscn<>uid://cf15cg6ycesnl::::res://Audio/SFX/button.wav
 settings_ui.tscn::PackedScene::6822235901043934111::1707283693::0::1::::<><>::uid://ch3s87qxbxmu7::::res://scenes/Settings/settings.tscn
+=======
+::res://::1707806282
+icon.svg::CompressedTexture2D::37906783194079153::1707702348::1707702637::1::::<><>::
+README.md::TextFile::-1::1707702348::0::1::::<><>::
+::res://Assets/::1707702348
+Campfire36.png::CompressedTexture2D::72467817957561074::1707702348::1707702348::1::::<><>::
+::res://Assets/DiceImage/::1707722961
+seed_0.png::CompressedTexture2D::2288181282772263046::1707702348::1707702348::1::::<><>::
+seed_1.png::CompressedTexture2D::8924218351327559737::1707702348::1707702348::1::::<><>::
+seed_2.png::CompressedTexture2D::5787263778853526342::1707702348::1707702348::1::::<><>::
+seed_3.png::CompressedTexture2D::7246067681587981787::1707702348::1707702348::1::::<><>::
+seed_4.png::CompressedTexture2D::3751406501749427021::1707702348::1707702348::1::::<><>::
+::res://Assets/sprites/::1707702348
+::res://Assets/sprites/characters/::1707702348
+chr_pawn_archer.png::CompressedTexture2D::5426102410047707247::1707702348::1707809039::1::::<><>::
+chr_pawn_chemist.png::CompressedTexture2D::3593066038522526321::1707702348::1707702348::1::::<><>::
+chr_pawn_knight.png::CompressedTexture2D::326692590529907738::1707702348::1707702348::1::::<><>::
+chr_pawn_mage.png::CompressedTexture2D::8520647934256842823::1707702348::1707702348::1::::<><>::
+chr_pawn_placeholder.png::CompressedTexture2D::3372756181020665874::1707702348::1707702348::1::::<><>::
+chr_pawn_skeleton.png::CompressedTexture2D::664057464208710609::1707702348::1707702348::1::::<><>::
+chr_pawn_skeleton_cpt.png::CompressedTexture2D::3188020155095620491::1707702348::1707702348::1::::<><>::
+chr_pawn_skeleton_mage.png::CompressedTexture2D::4920563635163250433::1707702348::1707702348::1::::<><>::
+::res://Assets/sprites/labels/::1707702348
+controls-ui-xbox.png::CompressedTexture2D::6011607213069453651::1707702348::1707702348::1::::<><>::
+controls-ui.png::CompressedTexture2D::3443747940631810349::1707702348::1707702348::1::::<><>::
+::res://Audio/::1707702348
+default_bus_layout.tres::AudioBusLayout::3161936264741574541::1707702348::0::1::::<><>::
+::res://Audio/BackgroundMusic/::1707702348
+BgMusic.mp3::AudioStreamMP3::6972727112036843100::1707702348::1707702348::1::::<><>::
+::res://Audio/SFX/::1707702348
+button.wav::AudioStreamWAV::5179284852675061005::1707702348::1707702348::1::::<><>::
+fire.mp3::AudioStreamMP3::1714461496853529718::1707702348::1707702348::1::::<><>::
+::res://fonts/::1707702348
+CONSOLA.TTF::FontFile::8900202473594259503::1707702348::1707702348::1::::<><>::
+CONSOLAB.TTF::FontFile::4555593849420053177::1707702348::1707702348::1::::<><>::
+CONSOLAI.TTF::FontFile::2732172579476942055::1707702348::1707702348::1::::<><>::
+CONSOLAZ.TTF::FontFile::5518138264391792828::1707702348::1707702348::1::::<><>::
+::res://GlobalScript/::1707702348
+Global.gd::GDScript::-1::1707702348::0::1::::<>Node<>::
+persistence.gd::GDScript::-1::1707702348::0::1::::<>Node<>::
+::res://scenes/::1707702348
+default_theme.tres::Theme::6344887685893094466::1707702348::0::1::::<><>::uid://dy2lbf1hvlrr8::::res://fonts/CONSOLA.TTF
+::res://scenes/Action Button/::1707702348
+input_button.tscn::PackedScene::1212764587294980663::1707702348::0::1::::<><>::
+::res://scenes/Arena/::1707807618
+arena.gd::GDScript::-1::1707702348::0::1::::TacticsArena<>Node3D<>::
+test_arena.tscn::PackedScene::1737631055247574471::1707807618::0::1::::<><>::res://scenes/Arena/arena.gd
+::res://scenes/Dice/::1707702348
+::res://scenes/Dice/DiceImage/::1707702348
+dice_image.gd::GDScript::-1::1707702348::0::1::::<>Control<>::
+dice_image.tscn::PackedScene::1213766356335883889::1707702348::0::1::::<><>::res://scenes/Dice/DiceImage/dice_image.gd<>uid://7uoang3w84qk::::res://Assets/DiceImage/seed_0.png
+::res://scenes/Dice/DiceNumber/::1707702348
+dice.gd::GDScript::-1::1707702348::0::1::::<>Control<>::
+dice.tscn::PackedScene::1398532864741567772::1707702348::0::1::::<><>::res://scenes/Dice/DiceNumber/dice.gd
+::res://scenes/Levels/::1707703770
+level.gd::GDScript::-1::1707702348::0::1::::<>Node2D<>::
+level.tscn::PackedScene::3460691943269134118::1707703770::0::1::::<><>::uid://dacicae3715us::::res://scenes/Player/player.tscn<>uid://c4g0h1g5lgir4::::res://scenes/Settings/settings_ui.tscn<>uid://bbdsf0bk6cwg::::res://Assets/Campfire36.png<>uid://c3xk1whxa6ux6::::res://scenes/Pause Menu/pause_menu.tscn<>uid://yoq6vrfhbbmc::::res://Audio/SFX/fire.mp3
+::res://scenes/Main Menu/::1707703770
+audio.gd::GDScript::-1::1707702348::0::1::::<>TabBar<>::
+back_button.gd::GDScript::-1::1707702348::0::1::::<>Button<>::
+controls.gd::GDScript::-1::1707702348::0::1::::<>TabBar<>::
+main_menu.tscn::PackedScene::7308008127877165963::1707703770::0::1::::<><>::uid://smk38dactbt::::res://icon.svg<>res://scenes/Main Menu/options.gd<>res://scenes/Main Menu/quit.gd<>uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Main Menu/start.gd<>uid://cf15cg6ycesnl::::res://Audio/SFX/button.wav<>uid://c4g0h1g5lgir4::::res://scenes/Settings/settings_ui.tscn<>uid://c6lv2ddx752c3::::res://Audio/BackgroundMusic/BgMusic.mp3
+options.gd::GDScript::-1::1707702348::0::1::::<>Button<>::
+quit.gd::GDScript::-1::1707702348::0::1::::<>Button<>::
+start.gd::GDScript::-1::1707702348::0::1::::<>Button<>::
+video.gd::GDScript::-1::1707702348::0::1::::<>TabBar<>::
+::res://scenes/Pause Menu/::1707702348
+pause_menu.gd::GDScript::-1::1707702348::0::1::::<>Control<>::
+pause_menu.tscn::PackedScene::6786264445537266837::1707702348::0::1::::<><>::uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Pause Menu/pause_menu.gd
+::res://scenes/Player/::1707703772
+player.gd::GDScript::-1::1707702348::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7163880121612593794::1707703770::0::1::::<><>::uid://smk38dactbt::::res://icon.svg<>res://scenes/Player/player.gd
+::res://scenes/RayCasting/::1707703773
+ray_casting.tscn::PackedScene::604951732299293975::1707703773::0::1::::<><>::
+::res://scenes/Settings/::1707702348
+settings.gd::GDScript::-1::1707702348::0::1::::<>TabContainer<>::
+settings.tscn::PackedScene::5323119393546105376::1707702348::0::1::::<><>::uid://cwnrmxn0gcsms::::res://scenes/default_theme.tres<>res://scenes/Main Menu/video.gd<>res://scenes/Settings/settings.gd<>res://scenes/Main Menu/back_button.gd<>res://scenes/Main Menu/audio.gd<>res://scenes/Main Menu/controls.gd<>uid://rjqb5h7lykod::::res://scenes/Action Button/input_button.tscn<>uid://cf15cg6ycesnl::::res://Audio/SFX/button.wav
+settings_ui.tscn::PackedScene::6822235901043934111::1707702348::0::1::::<><>::uid://ch3s87qxbxmu7::::res://scenes/Settings/settings.tscn
+::res://src/::1707702348
+tile.gd::GDScript::-1::1707702348::0::1::::TacticTile<>StaticBody3D<>::
+tile_raycasting.gd::GDScript::-1::1707702348::0::1::::<>Node3D<>::
+utils.gd::GDScript::-1::1707702348::0::1::::<>RefCounted<>::
+>>>>>>> 7caab130a494933139fae73ca919429aef1562db

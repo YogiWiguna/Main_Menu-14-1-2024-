@@ -1,0 +1,126 @@
+[gd_scene load_steps=17 format=3 uid="uid://dua8ettibwcaf"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_8y2g3"]
+[ext_resource type="Texture2D" uid="uid://bob12its3i651" path="res://Assets/sprites/characters/chr_pawn_placeholder.png" id="2_rgvpb"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hdg3l"]
+
+[sub_resource type="Animation" id="Animation_rmo4j"]
+resource_name = "IDLE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_bib3k"]
+resource_name = "JUMP"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.6, 0), Vector3(0, 2.2, 0), Vector3(0, 0.6, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jyyya"]
+resource_name = "DAMAGE"
+
+[sub_resource type="Animation" id="Animation_7rmtg"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.6, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uh74s"]
+_data = {
+"DAMAGE": SubResource("Animation_jyyya"),
+"IDLE": SubResource("Animation_rmo4j"),
+"JUMP": SubResource("Animation_bib3k"),
+"RESET": SubResource("Animation_7rmtg")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xifsd"]
+animation = &"DAMAGE"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mu60j"]
+animation = &"IDLE"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_427r6"]
+animation = &"JUMP"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xurb4"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hu8qw"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_lpf0m"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uv3ld"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_82gco"]
+states/DAMAGE/node = SubResource("AnimationNodeAnimation_xifsd")
+states/DAMAGE/position = Vector2(372, 57)
+states/End/position = Vector2(902, 155)
+states/IDLE/node = SubResource("AnimationNodeAnimation_mu60j")
+states/IDLE/position = Vector2(372, 155)
+states/JUMP/node = SubResource("AnimationNodeAnimation_427r6")
+states/JUMP/position = Vector2(519, 155)
+states/Start/position = Vector2(199, 155)
+transitions = ["IDLE", "JUMP", SubResource("AnimationNodeStateMachineTransition_xurb4"), "IDLE", "DAMAGE", SubResource("AnimationNodeStateMachineTransition_hu8qw"), "JUMP", "IDLE", SubResource("AnimationNodeStateMachineTransition_lpf0m"), "DAMAGE", "IDLE", SubResource("AnimationNodeStateMachineTransition_uv3ld")]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_8y2g3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, -8.74228e-09, -0.4, 0, 0.2, -1.74846e-08, 0, 0.6, 0)
+shape = SubResource("CapsuleShape3D_hdg3l")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(0.999476, 0, 0, 0, 0.999476, 0, 0, 0, 0.999476, 0, 0.6, 0)
+
+[node name="Character" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("2_rgvpb")
+vframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Character"]
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_uh74s")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="Character"]
+libraries = {
+"": SubResource("AnimationLibrary_uh74s")
+}
+tree_root = SubResource("AnimationNodeStateMachine_82gco")
+anim_player = NodePath("../AnimationPlayer")

@@ -1,0 +1,569 @@
+[gd_scene load_steps=30 format=3 uid="uid://y0ysah0m2fb0"]
+
+[ext_resource type="Script" path="res://scenes/Arena/arena.gd" id="1_xokj4"]
+
+[sub_resource type="ArrayMesh" id="3"]
+resource_name = "Cube006"
+_surfaces = [{
+"aabb": AABB(-0.495818, 0, -0.5, 0.991646, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 96, 123, 195, 0, 160, 223, 191, 0, 96, 123, 195, 0, 160, 223, 191, 0, 96, 123, 195, 0, 160, 223, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(219, 219, 253, 62, 0, 0, 0, 0, 0, 0, 0, 191, 219, 219, 253, 190, 0, 0, 0, 0, 0, 0, 0, 191, 219, 219, 253, 190, 0, 0, 0, 0, 0, 0, 0, 63, 219, 219, 253, 62, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="4"]
+resource_name = "Cube007"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="5"]
+resource_name = "Cube008"
+_surfaces = [{
+"aabb": AABB(-0.495818, 0, -0.5, 0.991646, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 96, 123, 195, 0, 160, 223, 191, 0, 96, 123, 195, 0, 160, 223, 191, 0, 96, 123, 195, 0, 160, 223, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(219, 219, 253, 62, 0, 0, 0, 0, 0, 0, 0, 191, 219, 219, 253, 190, 0, 0, 0, 0, 0, 0, 0, 191, 219, 219, 253, 190, 0, 0, 0, 0, 0, 0, 0, 63, 219, 219, 253, 62, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="6"]
+resource_name = "Cube009"
+_surfaces = [{
+"aabb": AABB(-0.495818, 0, -0.5, 0.991646, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 96, 123, 195, 0, 160, 223, 191, 0, 96, 123, 195, 0, 160, 223, 191, 0, 96, 123, 195, 0, 160, 223, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(219, 219, 253, 62, 0, 0, 0, 0, 0, 0, 0, 191, 219, 219, 253, 190, 0, 0, 0, 0, 0, 0, 0, 191, 219, 219, 253, 190, 0, 0, 0, 0, 0, 0, 0, 63, 219, 219, 253, 62, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="7"]
+resource_name = "Cube010"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="8"]
+resource_name = "Cube011"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="9"]
+resource_name = "Cube012"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="10"]
+resource_name = "Cube013"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="11"]
+resource_name = "Cube014"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="12"]
+resource_name = "Cube015"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="13"]
+resource_name = "Cube016"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="16"]
+resource_name = "Cube019"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="17"]
+resource_name = "Cube020"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="18"]
+resource_name = "Cube021"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="20"]
+resource_name = "Cube023"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="21"]
+resource_name = "Cube024"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="23"]
+resource_name = "Cube026"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="24"]
+resource_name = "Cube027"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="25"]
+resource_name = "Cube028"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="26"]
+resource_name = "Cube029"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="27"]
+resource_name = "Cube030"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 204, 54, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="28"]
+resource_name = "Cube031"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 204, 54, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="29"]
+resource_name = "Cube032"
+_surfaces = [{
+"aabb": AABB(-0.504182, 0, -0.5, 1.00837, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 64, 66, 58, 0, 32, 224, 191, 0, 64, 66, 58, 0, 32, 224, 191, 0, 64, 66, 58, 0, 32, 224, 63, 0, 0, 204, 54, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(18, 18, 1, 63, 0, 0, 0, 0, 0, 0, 0, 191, 18, 18, 1, 191, 0, 0, 0, 0, 0, 0, 0, 191, 18, 18, 1, 191, 0, 0, 0, 0, 0, 0, 0, 63, 18, 18, 1, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="30"]
+resource_name = "Cube033"
+_surfaces = [{
+"aabb": AABB(-0.504182, 0, -0.5, 1.00837, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 64, 66, 58, 0, 32, 224, 191, 0, 64, 66, 58, 0, 32, 224, 191, 0, 64, 66, 58, 0, 32, 224, 63, 0, 0, 204, 54, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(18, 18, 1, 63, 0, 0, 0, 0, 0, 0, 0, 191, 18, 18, 1, 191, 0, 0, 0, 0, 0, 0, 0, 191, 18, 18, 1, 191, 0, 0, 0, 0, 0, 0, 0, 63, 18, 18, 1, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="31"]
+resource_name = "Cube034"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 191, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 204, 54, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="ArrayMesh" id="32"]
+resource_name = "Cube035"
+_surfaces = [{
+"aabb": AABB(-0.504182, 0, -0.5, 1.00837, 1e-05, 1),
+"attribute_data": PackedByteArray(0, 64, 66, 58, 0, 32, 224, 191, 0, 64, 66, 58, 0, 32, 224, 191, 0, 64, 66, 58, 0, 32, 224, 63, 0, 0, 204, 54, 0, 0, 0, 0),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(18, 18, 1, 63, 0, 0, 0, 0, 0, 0, 0, 191, 18, 18, 1, 191, 0, 0, 0, 0, 0, 0, 0, 191, 18, 18, 1, 191, 0, 0, 0, 0, 0, 0, 0, 63, 18, 18, 1, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 255, 127, 255, 127, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 120, 188, 0, 0, 255, 127, 255, 127, 255, 127)
+}]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdcy3"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_r8f1q"]
+material = SubResource("StandardMaterial3D_pdcy3")
+
+[node name="Arena" type="Node3D"]
+script = ExtResource("1_xokj4")
+
+[node name="s" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.706716, 0.501191, -0.49936, 0.386445, 0.317765, 0.865844, 0.592632, -0.804881, 0.0308872, 0, 4, 0)
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+directional_shadow_mode = 0
+
+[node name="Tiles" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.386945)
+
+[node name="Tile001" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -3.5048, 0, 0.890924)
+mesh = SubResource("3")
+
+[node name="Tile002" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -2.50898, 0, 0.890924)
+mesh = SubResource("4")
+
+[node name="Tile003" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -3.5048, 0, -0.109076)
+mesh = SubResource("5")
+
+[node name="Tile004" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -3.49825, 0, -1.11957)
+mesh = SubResource("6")
+
+[node name="Tile005" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -2.50898, 0, -0.109076)
+mesh = SubResource("7")
+
+[node name="Tile006" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -1.50898, 0, -0.109076)
+mesh = SubResource("8")
+
+[node name="Tile007" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -1.50898, 0, 0.890924)
+mesh = SubResource("9")
+
+[node name="Tile008" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -2.50898, 0, -1.10908)
+mesh = SubResource("10")
+
+[node name="Tile009" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -0.508984, 0, -0.109076)
+mesh = SubResource("11")
+
+[node name="Tile010" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -0.508984, 0, 0.890924)
+mesh = SubResource("12")
+
+[node name="Tile011" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -1.50898, 0, -1.10908)
+mesh = SubResource("13")
+
+[node name="Tile014" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -0.508984, 0, -1.10908)
+mesh = SubResource("16")
+
+[node name="Tile015" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 0.491636, 0, -0.109076)
+mesh = SubResource("17")
+
+[node name="Tile016" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 0.491636, 0, 0.890924)
+mesh = SubResource("18")
+
+[node name="Tile018" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 1.49164, 0, -0.109076)
+mesh = SubResource("20")
+
+[node name="Tile019" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 1.49164, 0, 0.890924)
+mesh = SubResource("21")
+
+[node name="Tile021" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 2.49164, 0, -0.109076)
+mesh = SubResource("23")
+
+[node name="Tile022" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 2.49164, 0, 0.890924)
+mesh = SubResource("24")
+
+[node name="Tile023" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 1.49164, 0, -1.10908)
+mesh = SubResource("25")
+
+[node name="Tile031" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 0.5, 0, -1.10908)
+mesh = SubResource("25")
+
+[node name="Tile024" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 3.49164, 0, -0.109076)
+mesh = SubResource("26")
+
+[node name="Tile025" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 3.49164, 0, 0.890924)
+mesh = SubResource("27")
+
+[node name="Tile026" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 2.49164, 0, -1.10908)
+mesh = SubResource("28")
+
+[node name="Tile027" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 4.49582, 0, -0.109076)
+mesh = SubResource("29")
+
+[node name="Tile028" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 4.49582, 0, 0.890924)
+mesh = SubResource("30")
+
+[node name="Tile012" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -3.5048, 0, 1.88739)
+mesh = SubResource("3")
+
+[node name="Tile013" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -2.50898, 0, 1.88739)
+mesh = SubResource("4")
+
+[node name="Tile017" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -1.50898, 0, 1.88739)
+mesh = SubResource("9")
+
+[node name="Tile020" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -0.508984, 0, 1.88739)
+mesh = SubResource("12")
+
+[node name="Tile032" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 0.491636, 0, 1.88739)
+mesh = SubResource("18")
+
+[node name="Tile033" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 1.49164, 0, 1.88739)
+mesh = SubResource("21")
+
+[node name="Tile034" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 2.49164, 0, 1.88739)
+mesh = SubResource("24")
+
+[node name="Tile035" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 3.49164, 0, 1.88739)
+mesh = SubResource("27")
+
+[node name="Tile036" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 4.49582, 0, 1.88739)
+mesh = SubResource("30")
+
+[node name="Tile037" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -3.5048, 0, 2.89042)
+mesh = SubResource("3")
+
+[node name="Tile038" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -2.50898, 0, 2.89042)
+mesh = SubResource("4")
+
+[node name="Tile039" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -1.50898, 0, 2.89042)
+mesh = SubResource("9")
+
+[node name="Tile040" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, -0.508984, 0, 2.89042)
+mesh = SubResource("12")
+
+[node name="Tile041" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 0.491636, 0, 2.89042)
+mesh = SubResource("18")
+
+[node name="Tile042" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 1.49164, 0, 2.89042)
+mesh = SubResource("21")
+
+[node name="Tile043" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 2.49164, 0, 2.89042)
+mesh = SubResource("24")
+
+[node name="Tile044" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 3.49164, 0, 2.89042)
+mesh = SubResource("27")
+
+[node name="Tile045" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 4.49582, 0, 2.89042)
+mesh = SubResource("30")
+
+[node name="Tile029" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 3.49164, 0, -1.10908)
+mesh = SubResource("31")
+
+[node name="Tile030" type="MeshInstance3D" parent="Tiles"]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 4.49582, 0, -1.10908)
+mesh = SubResource("32")
+
+[node name="Terrain" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.94186, 0, 0, 0, 1.0036, 0, 0, 0, 3.90873, 0, -0.0956558, 0.160524)
+mesh = SubResource("PlaneMesh_r8f1q")
