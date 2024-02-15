@@ -565,5 +565,5 @@ transform = Transform3D(1.01, 0, 0, 0, 1.01, 0, 0, 0, 1.01, 4.49582, 0, -1.10908
 mesh = SubResource("32")
 
 [node name="Terrain" type="MeshInstance3D" parent="."]
-transform = Transform3D(5.94186, 0, 0, 0, 1.0036, 0, 0, 0, 3.90873, 0, -0.0956558, 0.160524)
+transform = Transform3D(4.67794, 0, 0, 0, 1.0049, 0, 0, 0, 2.64728, 0.523223, -0.289146, 0.388109)
 mesh = SubResource("PlaneMesh_r8f1q")

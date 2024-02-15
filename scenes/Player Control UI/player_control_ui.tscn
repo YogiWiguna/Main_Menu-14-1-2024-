@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://0cadvp1skmem"]
+
+[ext_resource type="Script" path="res://scenes/Player Control UI/player_control_ui.gd" id="1_nlr46"]
+
+[node name="PlayerControlUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nlr46")
+
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.028
+anchor_top = 0.059
+anchor_right = 0.978
+anchor_bottom = 0.941
+offset_left = -0.256001
+offset_top = -0.232002
+offset_right = -4.65601
+offset_bottom = -1.76801
+
+[node name="Panel" type="Panel" parent="HBox"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Actions" type="VBoxContainer" parent="HBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="Move" type="Button" parent="HBox/Actions"]
+layout_mode = 2
+text = "Move"
+
+[node name="Attack" type="Button" parent="HBox/Actions"]
+layout_mode = 2
+text = "Attack"
+
+[node name="Pass" type="Button" parent="HBox/Actions"]
+layout_mode = 2
+text = "Pass"
+
+[node name="Cancel" type="Button" parent="HBox/Actions"]
+layout_mode = 2
+text = "Cancel"

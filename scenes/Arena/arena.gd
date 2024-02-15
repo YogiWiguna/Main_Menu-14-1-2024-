@@ -19,8 +19,10 @@ func link_tiles(root, height, allies_arr=null):
 
 
 func mark_hover_tile(tile : TacticTile):
-	for t in $Tiles.get_children(): t.hover = false
-	if tile: tile.hover = true
+	for t in $Tiles.get_children(): 
+		t.hover = false
+	if tile: 
+		tile.hover = true
 
 
 func mark_reachable_tiles(root : TacticTile, distance):

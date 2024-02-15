@@ -172,5 +172,5 @@ func _process(delta):
 	apply_movement(delta)
 	start_animator()
 	tint_when_not_able_to_act()
-	$CharacterStats/HealthLabel.text = str(curr_health)+"/"+str(max_health)
+	#$CharacterStats/HealthLabel.text = str(curr_health)+"/"+str(max_health)
 	

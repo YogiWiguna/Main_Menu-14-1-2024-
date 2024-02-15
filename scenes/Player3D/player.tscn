@@ -5,6 +5,9 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hdg3l"]
 
+[sub_resource type="Animation" id="Animation_jyyya"]
+resource_name = "DAMAGE"
+
 [sub_resource type="Animation" id="Animation_rmo4j"]
 resource_name = "IDLE"
 tracks/0/type = "value"
@@ -14,10 +17,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": []
+"values": [Vector3(0, 0.6, 0), Vector3(0, 0.6, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_bib3k"]
@@ -35,9 +38,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector3(0, 0.6, 0), Vector3(0, 2.2, 0), Vector3(0, 0.6, 0)]
 }
-
-[sub_resource type="Animation" id="Animation_jyyya"]
-resource_name = "DAMAGE"
 
 [sub_resource type="Animation" id="Animation_7rmtg"]
 resource_name = "RESET"
@@ -94,6 +94,7 @@ states/JUMP/node = SubResource("AnimationNodeAnimation_427r6")
 states/JUMP/position = Vector2(519, 155)
 states/Start/position = Vector2(199, 155)
 transitions = ["IDLE", "JUMP", SubResource("AnimationNodeStateMachineTransition_xurb4"), "IDLE", "DAMAGE", SubResource("AnimationNodeStateMachineTransition_hu8qw"), "JUMP", "IDLE", SubResource("AnimationNodeStateMachineTransition_lpf0m"), "DAMAGE", "IDLE", SubResource("AnimationNodeStateMachineTransition_uv3ld")]
+graph_offset = Vector2(28, 22)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_8y2g3")
@@ -102,8 +103,8 @@ script = ExtResource("1_8y2g3")
 transform = Transform3D(0.2, 0, 0, 0, -8.74228e-09, -0.4, 0, 0.2, -1.74846e-08, 0, 0.6, 0)
 shape = SubResource("CapsuleShape3D_hdg3l")
 
-[node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(0.999476, 0, 0, 0, 0.999476, 0, 0, 0, 0.999476, 0, 0.6, 0)
+[node name="Tile" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
 
 [node name="Character" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)

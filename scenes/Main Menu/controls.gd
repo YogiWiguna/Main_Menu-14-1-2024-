@@ -12,11 +12,12 @@ var remapping_button = null
 
 # Dictionary for input map
 var input_actions = {
-	"move_up": "Move Up",
-	"move_down": "Move Down",
-	"move_right": "Move Right",
-	"move_left": "Move Left",
-	"interact": "Interact"
+	"camera_forward": "Camera Forward",
+	"camera_backwards": "Camera Backwards",
+	"camera_right": "Camera Right",
+	"camera_left": "Camera Left",
+	"camera_rotate_right": "Camera Rotate Right",
+	"camera_rotate_left": "Camera Rotate Left"
 }
 
 # Dictionary for mouse 
